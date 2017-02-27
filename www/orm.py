@@ -131,8 +131,8 @@ class Field(object):
 # -*- 表的不同列的字段的类型不一样
 
 class StringField(Field):
-    def __init__(self, name=None, primary_key=False, default=None, column_type='varchar(100)'):
-        super().__init__(name, column_type, primary_key, default)
+    def __init__(self, name=None, primary_key=False, default=None, ddl='varchar(100)'):
+        super().__init__(name, ddl, primary_key, default)
 
 
 class BooleanField(Field):
